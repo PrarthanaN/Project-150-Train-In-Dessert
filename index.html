@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src = "https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+
+<body>
+
+<a-scene background = "color: skyblue">
+
+<a-camera position = "0 5 0"></a-camera>
+
+<!-----------------------------------------All Assets--------------------------------------------->
+
+<a-assets>
+
+    <a-asset-item id = "railway_track" src = "railway_track/scene.gltf"></a-asset-item>
+    <a-asset-item id = "fence" src = "wood_fence/scene.gltf"></a-asset-item>
+    <a-asset-item id = "train" src = "train/Project 150 Train.glb"></a-asset-item>
+
+</a-assets>
+
+<!---------------------------------------Circular Plane------------------------------------------->
+
+<a-circle id = "road" position = "0 -15 -4" rotation = "-90 0 0" radius = "2000" shadow = "receive: true" 
+          visible = "true" color = "#e69c63"></a-circle>
+
+<!-----------------------------------------Models------------------------------------------------->
+
+<!--Railway Track-->
+
+<a-entity>
+<a-entity position = "0 -15 -48" gltf-model = "#railway_track" scale = "0.1 0.1 0.1" rotation = "0 0 0"></a-entity>
+</a-entity>
+
+<!--Fences-->
+
+<a-entity>
+    <a-entity position = "50 -15 -93" gltf-model = "#fence" scale = "8 8 8" rotation = "0 90 0"></a-entity>
+</a-entity>
+<a-entity>
+    <a-entity position = "-28.5 -15 -93" gltf-model = "#fence" scale = "8 8 8" rotation = "0 90 0"></a-entity>
+</a-entity>
+<a-entity>
+    <a-entity position = "-107 -15 -93" gltf-model = "#fence" scale = "8 8 8" rotation = "0 90 0"></a-entity>
+</a-entity>
+<a-entity>
+    <a-entity position = "-185.5 -15 -93" gltf-model = "#fence" scale = "8 8 8" rotation = "0 90 0"></a-entity>
+</a-entity>
+<a-entity>
+    <a-entity position = "-264 -15 -93" gltf-model = "#fence" scale = "8 8 8" rotation = "0 90 0"></a-entity>
+</a-entity>
+<a-entity>
+    <a-entity position = "-342.5 -15 -93" gltf-model = "#fence" scale = "8 8 8" rotation = "0 90 0"></a-entity>
+</a-entity>
+<a-entity>
+    <a-entity position = "-421 -15 -93" gltf-model = "#fence" scale = "8 8 8" rotation = "0 90 0"></a-entity>
+</a-entity>
+<a-entity>
+    <a-entity position = "-499.5 -15 -93" gltf-model = "#fence" scale = "8 8 8" rotation = "0 90 0"></a-entity>
+</a-entity>
+<a-entity>
+    <a-entity position = "-578 -15 -93" gltf-model = "#fence" scale = "8 8 8" rotation = "0 90 0"></a-entity>
+</a-entity>
+<a-entity>
+    <a-entity position = "-656.5 -15 -93" gltf-model = "#fence" scale = "8 8 8" rotation = "0 90 0"></a-entity>
+</a-entity>
+<a-entity>
+    <a-entity position = "-735 -15 -93" gltf-model = "#fence" scale = "8 8 8" rotation = "0 90 0"></a-entity>
+</a-entity>
+
+
+<a-entity>
+    <a-entity position = "128.5 -15 -93" gltf-model = "#fence" scale = "8 8 8" rotation = "0 90 0"></a-entity>
+</a-entity>
+<a-entity>
+    <a-entity position = "207 -15 -93" gltf-model = "#fence" scale = "8 8 8" rotation = "0 90 0"></a-entity>
+</a-entity>
+<a-entity>
+    <a-entity position = "285.5 -15 -93" gltf-model = "#fence" scale = "8 8 8" rotation = "0 90 0"></a-entity>
+</a-entity>
+<a-entity>
+    <a-entity position = "364 -15 -93" gltf-model = "#fence" scale = "8 8 8" rotation = "0 90 0"></a-entity>
+</a-entity>
+<a-entity>
+    <a-entity position = "442.5 -15 -93" gltf-model = "#fence" scale = "8 8 8" rotation = "0 90 0"></a-entity>
+</a-entity>
+<a-entity>
+    <a-entity position = "521 -15 -93" gltf-model = "#fence" scale = "8 8 8" rotation = "0 90 0"></a-entity>
+</a-entity>
+<a-entity>
+    <a-entity position = "599.5 -15 -93" gltf-model = "#fence" scale = "8 8 8" rotation = "0 90 0"></a-entity>
+</a-entity>
+<a-entity>
+    <a-entity position = "678 -15 -93" gltf-model = "#fence" scale = "8 8 8" rotation = "0 90 0"></a-entity>
+</a-entity>
+<a-entity>
+    <a-entity position = "756.5 -15 -93" gltf-model = "#fence" scale = "8 8 8" rotation = "0 90 0"></a-entity>
+</a-entity>
+<a-entity>
+    <a-entity position = "835 -15 -93" gltf-model = "#fence" scale = "8 8 8" rotation = "0 90 0"></a-entity>
+</a-entity>
+
+<!--Train-->
+
+<a-entity>
+    <a-entity position = "0 -11.5 -50" gltf-model = "#train" scale = "0.3 0.3 0.3" rotation = "0 -90 0"></a-entity>
+</a-entity>
+
+</a-scene>
+
+</body>
+
+</html>
